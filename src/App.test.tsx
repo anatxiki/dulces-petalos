@@ -8,4 +8,12 @@ describe("El usuario verá la página principal de la floristería", () => {
 
     expect(screen.getByText(/Rosa/i)).toBeInTheDocument();
   });
+
+  it("se muestran varias flores", () => {
+    render(<App />);
+
+    expect(screen.getByText(/Rosa/i)).toBeInTheDocument();
+    expect(screen.getByText(/Margarita/i)).toBeInTheDocument();
+    expect(screen.getByText(/Azucena/i)).toBeInTheDocument();
+  });
 });

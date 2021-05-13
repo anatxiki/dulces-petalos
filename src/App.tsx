@@ -1,5 +1,11 @@
 function App() {
-  return <>Rosa</>;
+  return (
+    <>
+      <div>Rosa</div>
+      <div>Margarita</div>
+      <div>Azucena</div>
+    </>
+  );
 }
 
 export default App;
